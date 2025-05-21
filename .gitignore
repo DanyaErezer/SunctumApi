@@ -21,3 +21,29 @@ yarn-error.log
 /.nova
 /.vscode
 /.zed
+# Игнорировать папку docker-starter (сабмодуль)
+docker-starter/*
+!docker-starter/.gitmodules
+
+# Игнорировать контейнерные данные, логи, временные файлы внутри docker-starter
+/docker-starter/db_data/
+/docker-starter/logs/
+/docker-starter/.docker/
+
+# Игнорировать Laravel
+
+/vendor/
+storage/*
+/node_modules/
+
+# Логи
+/storage/logs/*
+*.log
+
+# Дамп БД
+*.sql
+*.sql.gz
+
+# Прочее
+.DS_Store
+*.swp
